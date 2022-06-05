@@ -1,0 +1,464 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul,ol{
+    list-style-type: none;
+}
+
+body{
+    font-family: 'Arimo', sans-serif;
+}
+
+h2{
+    color: #5b6b80;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+h3{
+    font-size: 24px;
+    font-weight: 400;
+    color: #000;
+}
+
+p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #777;
+    line-height: 26px;
+}
+
+.container{
+    width: 1140px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.valign_center{
+    align-items: center;
+}
+
+.justify_content_center{
+    justify-content: center;
+}
+
+.justify_content_between{
+    justify-content: space-between;
+}
+
+/*header part start*/
+#top_header{
+    background-color: #ee2e24;
+}
+.news_title{
+    width: 20%;
+    margin-right: -30px;
+}
+.news_title h5{
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    padding: 10px 0;
+}
+.news_text{
+    width: 80%;
+}
+.news_text marquee{
+    font-size: 16px;
+    color: white;
+}
+/*header part end*/
+
+
+/*menu part start*/
+#main_menu{
+    background-color: #f8f9fa ;
+    box-shadow: 0 0 10px #ddd;
+    position: relative;
+    z-index: 99;
+}
+.menu ul li{
+    display: inline-block;
+}
+.menu ul li a{
+    display: block;
+    padding: 25px 23px;
+    font-size: 16px;
+    color: #444;
+    font-weight: 400;
+    transition: .5s;
+}
+.menu ul li a:hover{
+    color: #ee2e24;
+}
+.menu ul li:last-child a{
+    background-color: #ee2e24;
+    color: white;
+    margin-right: 25px;
+}
+.logo span{
+    margin-left: 20px;
+    position: relative;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    color: #666;
+    font-size: 18px;
+}
+.logo span:before{
+    content: '';
+    position: absolute;
+    height: 22px;
+    width: 2px;
+    background-color: #444;
+    margin-left: -10px;
+}
+/*menu part end*/
+
+/*banner part start*/
+#banner{
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    border-bottom: 1px solid #d1ecf1;
+    animation-name: banner_design;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+}
+@keyframes banner_design{
+    0%{
+        background-image: url(../Images/banner1.webp);
+    }
+    20%{
+        background-image: url(../Images/banner2.webp);
+    }
+    40%{
+        background-image: url(../Images/banner3.webp);
+    }
+    60%{
+        background-image: url(../Images/banner4.webp);
+    }
+    80%{
+        background-image: url(../Images/banner5.webp);
+    }
+    100%{
+        background-image: url(../Images/banner1.webp);
+    }    
+}
+/*banner part end*/
+
+/*about part start*/
+#about_part{
+    padding: 55px 0;
+}
+.about_part_img{
+    width: 40%;
+}
+.about_part_img img{
+    width: 100%;
+}
+.about_part_text{
+    width: 60%;
+    padding-left: 28px;
+}
+.about_part_text p{
+    margin-top: 17px;
+    text-align: justify;
+}
+/*about part end*/
+
+/*seminar schedule part start*/
+#seminar{
+    background-color: #f5f5f5;
+    padding: 65px 0;
+}
+.seminar_inner{
+    background-color: white;
+}
+.seminar_inner h2{
+    padding: 20px 0;
+    text-align: center;
+    background-color: #dddddda3;
+    color: #444;
+    font-weight: 400;
+}
+.seminar_inner table{
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+.table{
+    padding: 40px 20px;
+}
+.seminar_inner table thead tr{
+    background-color: #49596d;
+    color: #fff;
+}
+.seminar_inner table tr{
+    height: 55px;
+}
+.seminar_inner table tr:nth-child(even){
+    background-color: #f1f1f1;
+}
+.seminar_inner table tr td{
+    border: 1px solid #ddd;
+}
+.seminar_inner table tr a{
+    display: inline-block;
+    background-color: #49596d;
+    padding: 10px 40px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+    transition: .5s;
+}
+.seminar_inner table tr a:hover{
+    background-color: #ee2e24;
+}
+/*seminar schedule part end*/
+
+/*our courses part start*/
+#courses{
+    padding: 55px 0;
+}
+.section_heading{
+    padding-bottom: 25px;
+}
+.course_design{
+    width: 50%;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+.course_inner{
+    border: 1px solid #ddd;
+    background-color: #f5f5f5;
+}
+.course_content{
+    width: 65%;
+}
+.course_content h3{
+    padding: 20px;
+}
+.course_content a{
+    display: inline-block;
+    font-size: 16px;
+    color: white;
+    background-color: #49596d;
+    padding: 15px 60px 15px 30px;
+    margin-bottom: 30px;
+    border-radius: 0 25px 25px 0;
+    transition: .5s;
+}
+.course_content a:hover{
+    background-color: #ee2e24;
+}
+.course_content p{
+    font-size: 16px;
+    color: #444;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: 40px;
+    text-align: justify;
+}
+.course_image{
+    width: 35%;
+}
+.course_image img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+/*our courses part end*/
+
+/*gallery part start*/
+#gallery{
+    padding-bottom: 40px;
+}
+#gallery img{
+    width: 33%;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+.gallery_sec_heading p{
+    margin: 10px 0 30px 0;
+}
+/*gallery part end*/
+
+/*contact us part start*/
+#contact{
+    padding-bottom: 65px;
+}
+#contact p{
+    padding-bottom: 40px;
+}
+#contact h2{
+    padding-top: 10px;
+}
+#contact input{
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgb(199, 201, 201);
+    padding: 20px;
+    border-radius: 3px;
+    font-size: 16px;
+    transition: .12s;
+}
+input:focus{
+    outline-style: groove;
+    outline-width: 4px;
+    outline-color: skyblue;
+    box-shadow: 0 0 20px skyblue;
+}
+textarea:focus{
+    outline-style: groove;
+    outline-width: 4px;
+    outline-color: skyblue;
+    box-shadow: 0 0 20px skyblue;
+}
+.line1{
+    width: 49%;
+}
+.line2{
+    width: 49%;
+    padding-left: 30px;
+}
+.form_space{
+    margin-bottom: 25px;
+}
+textarea{
+    width: 98%;
+    padding: 10px 0 20px 20px;
+    font-size: 18px;
+    border: 1px solid rgb(199, 201, 201);
+    border-radius: 3px;
+    transition: .12s;
+}
+.submit_button{
+    padding-left: 480px;
+    padding-top: 30px;
+}
+.submit_button button{
+    background-color: #49596d;
+    text-align: center;
+    padding: 15px 50px;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 30px;
+    transition: .5s;
+    cursor: pointer;
+    border: 1px solid #49596d;
+}
+.submit_button button:hover{
+    background-color: #ee2e24;
+    border-color: #ee2e24;
+}
+/*contact us part end*/
+
+/*last part start*/
+#last_part{
+    background-color: #f5f5f5;
+}
+.last_part_logo{
+    width: 33%;
+}
+.last_part_logo img{
+    margin-left: 105px;
+    margin-top: 30px;
+}
+.last_part_logo p{
+    font-size: 18px;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-bottom: 50px;
+    color: #2c2c2c;
+}
+.last_part_address{
+    width: 34%;
+}
+.last_part_address h3{
+    padding-bottom: 25px;
+    padding-top: 30px;
+    position: relative;
+    color: #4e5e73;
+   
+}
+.last_part_address h3:after{
+    position: absolute;
+    content: '';
+    width: 60px ;
+    height: 4px;
+    background-color: #ddd;
+    left: 0;
+    top: 65px;
+    
+}
+.last_part_address p{
+    color: #444;
+    padding-top: 20px;
+    font-size: 18px;
+}
+.last_part_contact{
+    width: 33%;
+}
+.Contact_part h3{
+    padding-bottom: 25px;
+    position: relative;
+    color: #4e5e73;
+    padding-top: 30px;
+}
+.Contact_part h3:after{
+    position:absolute;
+    content: '';
+    width: 60px ;
+    height: 4px;
+    background-color: #ddd;
+    left: 0;
+    top: 65px;
+}
+.Contact_part p{
+    padding-bottom: 5px;
+    font-size: 18px;
+    color: #444;
+}
+.para{
+    margin-top: 20px;
+}
+.picture_part{
+    padding-bottom: 50px;
+    padding-top: 15px;
+}
+.picture_part a{
+    border: 1px solid darkgray;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    color: black;
+    transition: .5s;
+    margin: 0 5px;
+}
+.picture_part a:hover{
+    background-color: #ee2e24;
+    border-color: #ee2e24;
+    color: white;
+}
+/*last part end*/
+
+/*copyright part start*/
+#copyright p{
+    font-size: 18px;
+    text-align: center;
+    padding: 20px 0;
+}
+/*copyright part end*/
